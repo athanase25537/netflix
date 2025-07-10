@@ -1,0 +1,11 @@
+<div class="container d-flex">
+    @for(card of cards; track $index) {
+        <div class="content">
+            <app-card [card]="card"/>
+        </div>
+
+        <div class="content">
+            <app-card [card]="card"/>
+        </div>
+    }
+</div>
