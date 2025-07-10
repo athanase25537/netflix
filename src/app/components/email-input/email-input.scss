@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+
+    .content {
+        position: relative;
+        width: 60%;
+        background-color: rgba(19, 15, 15, 0.548);
+
+        label {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5%;
+            color: gray;
+            transition: translate 7s ease-in-out;
+        }
+
+        label.focus {
+            transform: translateY(-120%);
+            font-size: .8rem;
+        }
+
+        input {
+            height: 3.7rem;
+            background: transparent;
+            color: white;
+        }
+    }
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.7rem;
+        width: 40%;
+        font-size: 1.7rem;
+        
+    }
+}
