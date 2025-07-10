@@ -1,4 +1,23 @@
-.container {
-    gap: 30px;
-    overflow-x: hidden;
+.deco {
+    width: 100%;
+    height: 20vh;
+    transform: translateY(-58%);
+    overflow: hidden;
 }
+
+.container {
+    .contents {
+        gap: 40px;
+        overflow: hidden;
+
+        .content {
+            transition: scale .3s ease-in-out;
+        }
+
+        .content:hover {
+            cursor: pointer;
+            scale: 1.07;
+        }
+    }
+}
+
