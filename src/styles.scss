@@ -1,3 +1,14 @@
 html, body {
     font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.btn-danger,
+.bg-danger {
+    background-color: #e40914;
 }

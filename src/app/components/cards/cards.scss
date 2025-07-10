@@ -1,0 +1,29 @@
+.deco {
+    width: 100%;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+
+    svg {
+        transform: translateY(-50%);
+        width: 100%;
+    }
+}
+
+.container {
+    .contents {
+        gap: 40px;
+        overflow: hidden;
+
+        .content {
+            transition: scale .3s ease-in-out;
+        }
+
+        .content:hover {
+            cursor: pointer;
+            scale: 1.07;
+        }
+    }
+}
+
