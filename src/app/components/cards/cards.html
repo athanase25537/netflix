@@ -15,13 +15,18 @@
         </defs>
     </svg>
 </div>
-<div class="container">
-    <h2 class="fs-3 text-white fw-normal">Trending Now</h2>
-    <div class="contents p-3 d-flex">
-        @for(card of cards; track $index) {
-            <div class="content">
-                <app-card [card]="card"/>
-            </div>
-        }
+
+<div class="container position-relative">
+    <h2 class="fs-3 text-white fw-normal">Tendances actuelles</h2>
+    
+    <!-- Scroll Buttons -->
+    <button class="scroll-btn left" (click)="scrollLeft()" *ngIf="showLeft">&#10094;</button>
+    <button class="scroll-btn right" (click)="scrollRight()" *ngIf="showRight">&#10095;</button>
+  
+    <div #scrollContainer class="contents p-3 d-flex overflow-auto" (scroll)="onScroll()" style="scroll-behavior: smooth;">
+      <div class="content" *ngFor="let card of cards">
+        <app-card [card]="card" />
+      </div>
     </div>
 </div>
+  
