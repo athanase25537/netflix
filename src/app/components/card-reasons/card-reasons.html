@@ -1,0 +1,10 @@
+<div class="container">
+    <h2 class="fs-3 text-white fw-normal">Encore plus de raisons de vous abonner</h2>
+    <div class="contents p-3">
+        @for(card of cards; track $index) {
+            <div class="content">
+                <app-card-reason [card]="card"/>
+            </div>
+        }
+    </div>
+</div>
