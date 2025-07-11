@@ -1,0 +1,9 @@
+.accordion-button:focus {
+    box-shadow: none; /* Supprime la bordure bleue */
+}
+.accordion-button::after {
+    display: none !important; /* Supprime la flèche par défaut */
+}
+.icon-toggle {
+    margin-left: auto;
+}

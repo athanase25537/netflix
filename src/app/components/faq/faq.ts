@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './faq.scss'
 })
 export class Faq {
+  open = false;
 
+  onClick(): void {
+    this.open = !this.open
+  }
 }

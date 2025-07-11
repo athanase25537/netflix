@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { Main } from "./components/main/main";
 import { Cards } from "./components/cards/cards";
-import { CardReason } from "./components/card-reason/card-reason";
 import { CardReasons } from "./components/card-reasons/card-reasons";
+import { Faq } from "./components/faq/faq";
 
 @Component({
   selector: 'app-root',
-  imports: [Main, Cards, CardReason, CardReasons],
+  imports: [Main, Cards, CardReasons, Faq],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
