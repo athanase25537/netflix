@@ -1,13 +1,17 @@
 import { Component, input } from '@angular/core';
 import { FaqModel } from '../../models/faqModel';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-faq',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './faq.html',
   styleUrl: './faq.scss'
 })
 export class Faq {
+
+  isFocused = false
+
   faq = input<FaqModel>(new FaqModel(
       "1", 
       "Netflix, qu'est ce que c'est ?", 
@@ -22,5 +26,13 @@ export class Faq {
 
   onClick(): void {
     this.open = !this.open
+  }
+
+  onMouseEnter() {
+    this.isFocused = true;
+  }
+
+  onMouseLeave() {
+    this.isFocused = false;
   }
 }
