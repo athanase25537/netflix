@@ -1,0 +1,14 @@
+.container {
+    width: 250px;
+    height: 330px;
+    background: linear-gradient(120deg, #1b1e3d, #210f19);
+    border-radius: 20px;
+
+    i {
+        bottom: 20px;
+        right: 20px;
+        background: linear-gradient(to right, #e40914, #af7065);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

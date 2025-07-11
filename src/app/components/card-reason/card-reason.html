@@ -1,1 +1,5 @@
-<p>card-reason works!</p>
+<div class="container position-relative py-4">
+    <h1 class="text-white fs-3">{{ card().title }}</h1>
+    <p class="text-secondary">{{ card().description }}</p>
+    <i class="fs-1 position-absolute {{ card().icon }}"></i>
+</div>
