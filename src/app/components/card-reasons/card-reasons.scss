@@ -1,0 +1,32 @@
+.container {
+    .contents {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+        .content {
+            width: 23%;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .container {
+        .contents {
+            .content {
+                width: 48%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        .contents {
+            .content {
+                width: 100%;
+            }
+        }
+    }
+}

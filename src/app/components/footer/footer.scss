@@ -1,0 +1,40 @@
+.container {
+    color: rgb(165, 160, 160);
+
+    a {
+        color: rgb(165, 160, 160);
+    }
+
+    .contents {
+        padding-top: 3%;
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            list-style: none;
+
+            li {
+                padding-bottom: 12px;
+            }
+            
+        }
+    }
+
+    select {
+        width: fit-content;
+        background: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+    
+        .contents {
+            flex-direction: column;
+
+            ul {
+                padding: 0;
+            }
+        }
+    }
+}

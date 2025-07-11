@@ -1,0 +1,79 @@
+.container {
+    position: relative;
+  
+    .contents {
+      gap: 40px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: none; // Firefox
+      -ms-overflow-style: none; // IE
+  
+      &::-webkit-scrollbar {
+        display: none;
+      }
+  
+      .content {
+        flex: 0 0 auto;
+        transition: scale .3s ease-in-out;
+      }
+  
+      .content:hover {
+        cursor: pointer;
+        scale: 1.07;
+      }
+    }
+  
+    .scroll-btn {
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: none;
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+      z-index: 10;
+      cursor: pointer;
+  
+      &.left {
+        left: 0;
+        transform: translateX(-100%);
+      }
+  
+      &.right {
+        transform: translateX(100%);
+        right: 0;
+      }
+    }
+}
+
+.deco {
+  width: 100vw;
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+
+    .scroll-btn {
+  
+      &.left {
+        left: 0;
+        transform: translateX(0);
+      }
+  
+      &.right {
+        transform: translateX(0);
+        right: 0;
+      }
+    }
+}
+}
+  

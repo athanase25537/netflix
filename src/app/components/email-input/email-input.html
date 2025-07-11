@@ -1,9 +1,9 @@
-<div class="container">
-    <div class="content">
+<div class="container" [ngClass]="{'align-items-center': !onForm()}">
+    <div class="content" [ngClass]="{'on-form': onForm()}">
         <label [ngClass]="{'focus': focus }" for="email">Adresse e-mail</label>
         <input (blur)="onblur()" (focus)="onfocus()" id="email" type="text" class="form-control rounded">
     </div>
-    <button class="btn btn-danger">
+    <button class="btn btn-danger" [ngClass]="{'on-form': onForm()}">
         <span class="me-3">Commencer</span>
         <i class="fa-solid fa-chevron-right fw-bold"></i>
     </button>

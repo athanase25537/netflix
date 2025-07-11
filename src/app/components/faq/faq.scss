@@ -1,0 +1,25 @@
+.accordion-button:focus {
+    box-shadow: none; /* Supprime la bordure bleue */
+}
+.accordion-button::after {
+    display: none !important; /* Supprime la flèche par défaut */
+}
+.icon-toggle {
+    margin-left: auto;
+}
+
+button {
+    transition: none;
+}
+
+.accordion-item:hover {
+    cursor: pointer;
+}
+
+h2 {
+    background-color: rgb(63, 58, 58);
+
+    button {
+        background-color: rgb(63, 58, 58);
+    }
+}

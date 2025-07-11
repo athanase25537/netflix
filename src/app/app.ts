@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { Main } from "./components/main/main";
-import { EmailInput } from "./components/email-input/email-input";
-import { Card } from "./components/card/card";
+import { Cards } from "./components/cards/cards";
+import { CardReasons } from "./components/card-reasons/card-reasons";
+import { Faqs } from './components/faqs/faqs';
+import { Footer } from "./components/footer/footer";
+import { FormAsk } from "./components/form-ask/form-ask";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Main, EmailInput, Card],
+  imports: [Main, Cards, CardReasons, Faqs, Footer, FormAsk],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
