@@ -2,6 +2,7 @@
     display: flex;
     gap: 8px;
     width: 100%;
+    justify-content: space-between;
 
     .content {
         position: relative;
@@ -18,12 +19,12 @@
         }
 
         label.focus {
-            transform: translateY(-120%);
+            transform: translateY(-110%);
             font-size: .8rem;
         }
 
         input {
-            height: 3.7rem;
+            height: 3.2rem;
             background: transparent;
             color: white;
         }
@@ -33,10 +34,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 3.7rem;
+        height: 3.2rem;
         width: 40%;
         font-size: 1.7rem;
         
+    }
+
+    .content.on-form {
+        width: 80%;
+    }
+
+    button.on-form {
+        width: 20%;
+        font-size: 1.1rem;
     }
 }
 
@@ -46,11 +56,25 @@
         button {
             font-size: 1.4rem;   
         }
+
+        button.on-form {
+            width: 40%;
+            font-size: 1rem;
+        }
     }
 }
 
 @media screen and (max-width: 514px) {
     .container {
+        flex-direction: column;
+
+        .content {
+            width: 100%;
+        }
+
+        .content.on-form {
+            width: 100%;
+        }
 
         button {
             font-size: 1.2rem;   

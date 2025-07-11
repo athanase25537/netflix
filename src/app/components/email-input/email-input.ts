@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-email-input',
@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
 })
 export class EmailInput {
   focus = false;
+  onForm = input<boolean>(false);
+  
   onfocus() {
     this.focus = true;
     console.log(this.focus)

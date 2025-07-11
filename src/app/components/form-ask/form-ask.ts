@@ -8,5 +8,5 @@ import { EmailInput } from "../email-input/email-input";
   styleUrl: './form-ask.scss'
 })
 export class FormAsk {
-
+  onForm = true
 }

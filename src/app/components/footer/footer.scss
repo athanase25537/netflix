@@ -25,3 +25,16 @@
         background: none;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .container {
+    
+        .contents {
+            flex-direction: column;
+
+            ul {
+                padding: 0;
+            }
+        }
+    }
+}
